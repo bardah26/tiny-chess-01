@@ -8,6 +8,10 @@ A compact chess engine in a single `main.py` (Python 3.13, stdlib only, under 4 
 
 Bounty: https://make.fun/bounty/tiny-chess-01
 
+## Engine
+
+Alpha-beta search with quiescence (captures/promotions, all evasions when in check), a transposition table, MVV-LVA move ordering, and incremental material + piece-square evaluation on a 0x88 board, with full legal move generation (castling, en passant, all four promotions). Fixed node budget of 100k per move and a seeded RNG make play fully deterministic. Practice trials against the gauntlet anchors: trial-0 1W/1D/4L, trial-1 1W/2D/3L.
+
 ## Run
 
 ```sh
